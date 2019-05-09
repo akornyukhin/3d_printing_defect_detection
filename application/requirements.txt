@@ -1,0 +1,9 @@
+Flask
+pandas
+numpy
+scipy
+opencv-python
+tensorflow
+keras
+h5py
+pillow

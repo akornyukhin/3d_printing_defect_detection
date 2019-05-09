@@ -1,0 +1,14 @@
+---
+applications:
+- name: anomaly-detection-cnn
+  memory: 512M
+
+  ports:
+    80:
+      exposed: true
+      publish: false
+      protocol: tcp
+    8080:
+      exposed: true
+      publish: true
+      protocol: tcp

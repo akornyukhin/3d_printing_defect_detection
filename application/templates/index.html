@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>Gassed UP Anomaly detection MVP</h1>
+        <h2>This web service allows you to upload images of 3D printed detail scans in order to identify, if there is a defect.</h2>
+        <p>To do so a CNN autoencoder is used. The architecture is shown below:</p>
+        <p><img src='./static/index/cnn_architecture.png' width=70% alt='CNN Architecture'></p>
+        <p>In order to see how it permorms please chose the direcotory with the images for processing. Make sure they are 1440x1420 size.</p>
+
+        <form action="/calculate" method = "POST" enctype="multipart/form-data">
+            <input type = "file" name = "file" multiple/>
+            <input type = "submit" value="Upload"/>
+        </form>
+
+    </body>
+</html>

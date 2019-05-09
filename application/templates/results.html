@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        {% block content %}
+        <!-- <h1>Mean {{ mean }}</h1>
+        <h1>Median {{ med }}</h1>
+        <h1>% of defected images {{ defect_percent }}</h1> -->
+        <table border=1>
+            <caption>Anomaly detection</caption>
+            <tr>
+                <th>Anomaly</th>
+                <th>Score</th>
+
+                <th>Original Image</th>
+
+                <th>Encoded Filter 1</th>
+                <th>Encoded Filter 2</th>
+                <th>Encoded Filter 3</th>
+                <th>Encoded Filter 4</th>
+                <th>Encoded Filter 5</th>
+                <th>Encoded Filter 6</th>
+                <th>Encoded Filter 7</th>
+                <th>Encoded Filter 8</th>
+                <th>Encoded Filter 9</th>
+                <th>Encoded Filter 10</th>
+                <th>Encoded Filter 11</th>
+                <th>Encoded Filter 12</th>
+                <th>Encoded Filter 13</th>
+                <th>Encoded Filter 14</th>
+                <th>Encoded Filter 15</th>
+                <th>Encoded Filter 16</th>
+                
+                <th>Reconstructed Image</th>
+            </tr>
+            {% for anomaly, diff, input, filter1, filter2, filter3, filter4, filter5,
+                 filter6, filter7, filter8, filter9, filter10, filter11, filter12, 
+                 filter13, filter14, filter15, filter16, output in result %}
+            <tr>
+                <td>{{ anomaly }}</td>
+                <td>{{ diff }}</td>
+                <td><img src="{{ input }}" alt="Image"></td>
+                <td><img src="{{ filter1 }}" alt="Image"></td>
+                <td><img src="{{ filter2 }}" alt="Image"></td>
+                <td><img src="{{ filter3 }}" alt="Image"></td>
+                <td><img src="{{ filter4 }}" alt="Image"></td>
+                <td><img src="{{ filter5 }}" alt="Image"></td>
+                <td><img src="{{ filter6 }}" alt="Image"></td>
+                <td><img src="{{ filter7 }}" alt="Image"></td>
+                <td><img src="{{ filter8 }}" alt="Image"></td>
+                <td><img src="{{ filter9 }}" alt="Image"></td>
+                <td><img src="{{ filter10 }}" alt="Image"></td>
+                <td><img src="{{ filter11 }}" alt="Image"></td>
+                <td><img src="{{ filter12 }}" alt="Image"></td>
+                <td><img src="{{ filter13 }}" alt="Image"></td>
+                <td><img src="{{ filter14 }}" alt="Image"></td>
+                <td><img src="{{ filter15 }}" alt="Image"></td>
+                <td><img src="{{ filter16 }}" alt="Image"></td>
+                <td><img src="{{ output }}" alt="Image"></td>
+            </tr>
+            {% endfor %}
+        </table>{% endblock %}
+    </body>
+</html>
