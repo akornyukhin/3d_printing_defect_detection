@@ -158,8 +158,10 @@ The major result is proving to the stakeholder that the approach is viable in ge
 </table>
 
 ## Application
+A simple web-application for demostration purposes. The main functionality is the ability to upload the images for analysis. As an input the user shall get the anomaly score (Euclidian distance), as well as 16 bottlneck filters representing the encoding of the image - this particular feature was added to see how NN "sees" the image.
 
 ## UI
+A mocup of the UI for operating, once the solution is in production. The killer-feature is the interface for image labeling.
 
 ## Next steps and improvements
 In order to improve the performance of the algorithm the following steps shall be visable:
