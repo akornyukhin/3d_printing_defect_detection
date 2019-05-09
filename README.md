@@ -162,3 +162,11 @@ The major result is proving to the stakeholder that the approach is viable in ge
 ## UI
 
 ## Next steps and improvements
+In order to improve the performance of the algorithm the following steps shall be visable:
+* Move to supervised learning by labeling the data
+* Devide the training data into layer "groups" and make a separate model for each
+* Incorporate changes in architecture:
+  - Dropouts
+  - Regularization
+  - Sequential layer analysis
+  - TBD
