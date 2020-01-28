@@ -50,7 +50,7 @@ The data was available for 3 printing machines, however only one machine was use
   
 ## Solution
 ### Neural network
-The core of the solution is a Convolutionla Autoencoder with some logic applied above it for anomaly scoring.
+The core of the solution is a Convolutional Autoencoder with some logic applied above it for anomaly scoring.
  
 Neural network architecute (drawn using <a href="http://alexlenail.me/NN-SVG/LeNet.html">this</a> tool):
 <img src="./application/static/index/cnn_architecture.png" alt="NN architecure">
